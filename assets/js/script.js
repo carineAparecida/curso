@@ -23,6 +23,22 @@ document.querySelector('#form-login').addEventListener('mouseleave', e=>{
 document.querySelector('#form-login').addEventListener('submit', e=>{
 
 	e.preventDefault();
-	console.log('Formulário enviado!')
+	let email = document.querySelector('#email').value;
+	let password = document.querySelector('#password').value;
+	
+	let json = {
+		email,
+		password
+	};
 
+	if(!json.email) {
+
+		console.error("O campo e mail deve ser preenchido");
+	} else if (!json.password) {
+
+		console.log("O campo senha deve ser preenchido");
+	} else{
+
+		console.info("Dados validados com sucesso");
+	}
 });
