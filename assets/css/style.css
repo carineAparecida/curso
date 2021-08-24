@@ -83,6 +83,13 @@ footer {
 	margin: auto;
 	padding: 20px;
 }
+.content-tabuada table{
+	width: 100%;
+}
 .content-tabuada td {
-	padding: 10px;
+	padding: .75rem;
+	border-top: 1px solid #DEE2E6;
+}
+.content-tabuada tbody tr:nth-child(odd){
+	background-color: rgba(0,0,0,05);
 }
