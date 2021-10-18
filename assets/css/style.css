@@ -91,5 +91,9 @@ footer {
 	border-top: 1px solid #DEE2E6;
 }
 .content-tabuada tbody tr:nth-child(odd){
-	background-color: rgba(0,0,0,05);
+	background-color: white;
+}
+#valorA {
+	width: 100%;
+	padding: 10px;
 }
